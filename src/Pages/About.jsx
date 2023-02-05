@@ -14,7 +14,7 @@ class About extends React.Component {
         <Container className="col d-grid gap-3">
         <Container className="row justify-content-center">
           <Person name="Angelina Z" content="President, c/o 2023" />
-          <Person name="Anna L" content="Vice President, c/o 2023" />
+          <Person name="Anna L" content="President, c/o 2023" />
           <Person name="Veronica S" content="Secretary, c/o 2025" />
         </Container>
         <Container className="row justify-content-center">

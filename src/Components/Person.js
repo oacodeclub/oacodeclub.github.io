@@ -27,8 +27,7 @@ class Person extends React.Component {
           <Card.Title>{this.props.name}</Card.Title>
           <Card.Text>{this.props.content}</Card.Text>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content.
+            OA Code Club
           </Card.Text>
         </Card.Body>
         <Card.Body>
