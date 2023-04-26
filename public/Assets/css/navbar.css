@@ -1,0 +1,55 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 25;
+    text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #e40000;
+    position: sticky;
+    color: black;
+}
+
+.topnav a.left {
+    padding-right: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a:not(.img) {
+    float: right;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 8px;
+    color: black;
+}
+
+.img {
+    float: left;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 8px;
+    color: black;
+}
+
+.container:hover .text::after {
+    width: 100%;
+}
+
+.text {
+    position: relative;
+    display: inline-block;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #00ff3c;
+    transition: width 0.5s ease-in-out;
+}
