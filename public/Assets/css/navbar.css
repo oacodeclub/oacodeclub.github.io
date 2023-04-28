@@ -2,13 +2,17 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 25;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #e40000;
+    background-color: rgb(224, 224, 224);
     position: sticky;
+    overflow:auto;
     color: black;
+    width: 100%;
 }
 
 .topnav a.left {
@@ -21,7 +25,7 @@ body {
     text-align: center;
     padding: 4px 16px;
     text-decoration: none;
-    font-size: 8px;
+    font-size: 15px;
     color: black;
 }
 
@@ -30,8 +34,13 @@ body {
     text-align: center;
     padding: 4px 16px;
     text-decoration: none;
-    font-size: 8px;
+    font-size: 12px;
     color: black;
+}
+
+.image {
+    width: 75px;
+    height: 75px;
 }
 
 .container:hover .text::after {
@@ -41,6 +50,7 @@ body {
 .text {
     position: relative;
     display: inline-block;
+    font-weight:500;
 }
 
 .text::after {
@@ -49,7 +59,7 @@ body {
     bottom: -10px;
     left: 0;
     width: 0%;
-    height: 5px;
-    background-color: #00ff3c;
+    height: 2.5px;
+    background-color: #ff0000;
     transition: width 0.5s ease-in-out;
 }
