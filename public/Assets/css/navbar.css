@@ -46,7 +46,7 @@ body {
     height: 75px;
 }
 
-.container:hover .text::after {
+.item:hover .text::after {
     width: 100%;
 }
 

@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#Title {
+    color: white;
+}
+
+.main {
+    background-color: black;;
+    color:white;
+    padding: 30px;
+    border-radius: 30px;
+    width:auto;
+    line-height: 6em;
+}
+
+.carousel {
+    height: 75vh;
+}
+
+.main p {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 10em;
+}
+
+.profilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto;
+    display: block;
+}
+
+.Socials a {
+    color: lightblue;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 0 10px;
+    font-size: 100px;
+    font-weight:normal;
+}

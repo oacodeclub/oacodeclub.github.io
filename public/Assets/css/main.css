@@ -7,6 +7,9 @@ body {
     color: white;
     text-align: center;
     top: 5%;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 30px;
 }
 
 [data-animate] {
@@ -42,7 +45,7 @@ body {
     }
 
     to {
-        transform: translateY(-90%);
-        font-size: 150px;
+        transform: translateY(-80%);
+        font-size: 140px;
     }
 }
