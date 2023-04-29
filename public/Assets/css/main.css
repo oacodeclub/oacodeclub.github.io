@@ -1,8 +1,48 @@
+body {
+    background-color: black;
+}
+
 #Title {
-    font-size: 50px;
-    font-weight: lighter;
-    color: #1b1515;
+    font-weight: 300;
+    color: white;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    top: 5%;
+}
+
+[data-animate] {
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.1s;
+}
+
+[moveandexpand] {
+    animation-name: move-and-expand;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.6s;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes move-and-expand {
+    from {
+        transform: translateY(0);
+        font-size: 100px;
+    }
+
+    to {
+        transform: translateY(-90%);
+        font-size: 150px;
+    }
 }
