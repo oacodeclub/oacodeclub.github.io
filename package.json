@@ -6,7 +6,7 @@
   "private": true,
   "main": "src/index.js",
       "author": "Lil Gamer Playz - Erick Tran",
-    "license": "MIT"
+    "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
