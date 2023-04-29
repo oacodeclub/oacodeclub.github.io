@@ -1,12 +1,9 @@
 {
   "name": "oacodeclub.github.io",
   "homepage": "https://oacodeclub.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "This is a testing app for my test",
-  "private": true,
   "main": "src/index.js",
-      "author": "Lil Gamer Playz - Erick Tran",
-    "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -26,14 +23,5 @@
   "scripts": {
         "start": "node src/index.js",
         "error": "error: no site specified"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "devDependencies": {
-    "eslint": "^8.39.0"
   }
 }
