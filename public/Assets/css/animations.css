@@ -1,0 +1,35 @@
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes move-and-expand {
+    from {
+        transform: translateY(80%);
+        font-size: 100px;
+    }
+
+    to {
+        transform: translateY(0%);
+        font-size: 140px;
+    }
+}
+
+@keyframes move-and-expand-SubTitle {
+    from {
+        transform: translateY(80%);
+        font-size: 20px;
+    }
+
+    to {
+        transform: translateY(0%);
+        font-size: 40px;
+    }
+}

@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 //Server
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
 //Server starting
 app.listen(port, () => console.log("Server started on port " + port));
