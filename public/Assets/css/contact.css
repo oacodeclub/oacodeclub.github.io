@@ -1,0 +1,39 @@
+#ContactLabel {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#ContactUsSublabel {
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+#Contact input, #Signup input {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+#Contact input:hover, #Signup input:hover {
+    animation: animateOrangeOnHover 0.5s;
+    animation-fill-mode: both;
+}
+
+#Contact input:not(:hover), #Signup input:not(:hover) {
+    animation-direction: reverse;
+}
+
+@keyframes animateOrangeOnHover {
+    0% {
+        border-color: #ccc;
+    }
+
+    100% {
+        border-color: #00ffd0;
+        opacity: 1;
+    }
+}
