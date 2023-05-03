@@ -31,7 +31,7 @@ body {
     opacity: 0;
 }
 
-#HomeMain {
+#Home {
     background-image: url(/Assets/images/background-temp.gif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ body {
     color: white;
 }
 
-#HomeMain::before {
+#Home::before {
     content: "";
     position: absolute;
     top: 0;

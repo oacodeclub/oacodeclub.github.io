@@ -37,61 +37,73 @@
 </head>
 
 <body>
-    <div>
+    <div id="navbar">
         <nav class="topnav">
-            <a class="item left" href="#HomeMain">
-                <h3 class="text">Home</h3>
-            </a>
-            <a class="item" href="#Calendar">
-                <h3 class="text">Calendar</h3>
-            </a>
-            <a class="item" href="#Contact">
+            <button class="item left" onclick="document.getElementById('Contact').scrollIntoView();">
                 <h3 class="text">Contact</h3>
-            </a>
-            <a class="item" href="#Signup">
+            </button>
+            <button class="item" onclick="document.getElementById('Signup').scrollIntoView();">
                 <h3 class="text">Sign Up</h3>
-            </a>
-            <a class="item" href="#Board">
+            </button>
+            <button class="item" onclick="document.getElementById('Calendar').scrollIntoView();">
+                <h3 class="text">Calendar</h3>
+            </button>
+            <button class="item" onclick="document.getElementById('Board').scrollIntoView();">
                 <h3 class="text">Our Board</h3>
-            </a>
-            <a class="item right" href="#About">
+            </button>
+            <button class="item" onclick="document.getElementById('About').scrollIntoView();" >
                 <h3 class="text">About Us</h3>
-            </a>
-            <a class="img" href="#HomeMain">
+            </button>
+            <button class="item right" onclick="document.getElementById('Home').scrollIntoView();">
+                <h3 class="text">Home</h3>
+            </button>
+            <button class="img" onclick="document.getElementById('Home').scrollIntoView();">
                 <img src="/Assets/images/Example.jpeg" class="image">
-            </a>
+            </button>
         </nav>
     </div>
 
-    <div id="HomeMain">
+    <div id="Home">
         <h1 id="Title" data-animate style="animation-delay:0.1s;">Welcome to OA Code</h1>
         <br><br>
-        <h3 id="Sub-Title" data-animate style="animation-delay:0.1s;">We contribute to widespread coding recognition.<br><br>Meetings every Friday!
+        <h3 id="Sub-Title" data-animate style="animation-delay:0.1s;">We contribute to widespread coding
+            recognition.<br><br>Meetings every Friday!
         </h3>
     </div>
 
-    <br>
-    <p id="About">About</p>
+    <br><br>
 
-    <div id="Text1">
-        <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example1</h1>
+    <div id="About">
+        <p id="AboutLabel">About</p>
+
+        <div id="Text1">
+            <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example1</h1>
+        </div>
+        <br>
+        <div id="Text2">
+            <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2 Example 2 Example 2 Example 2
+                Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
+                Example
+                2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
+                Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
+                Example
+                2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
+            </h1>
+        </div>
+        <br>
+        <div id="Text3">
+            <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3 Example 3 Example 3 Example 3
+                Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
+                Example
+                3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
+                Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
+                Example
+                3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
+            </h1>
+        </div>
     </div>
-    <br>
-    <div id="Text2">
-        <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2 Example 2 Example 2 Example 2
-            Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example
-            2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-            Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example
-            2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 </h1>
-    </div>
-    <br>
-    <div id="Text3">
-        <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3 Example 3 Example 3 Example 3
-            Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example
-            3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-            Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example
-            3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 </h1>
-    </div>
+
+    <br><br>
     <div id="Board">
         <h1 id="BoardTitle">Our Board</h1>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -246,7 +258,7 @@
             Developed by Erick Tran for OA Code
         </h4>
         <h4>
-            Beta Version 0.0.1
+            Beta Version 0.1.0
         </h4>
     </footer>
 </body>
