@@ -50,17 +50,17 @@ body {
     height: 75px;
 }
 
-.item:hover .text::after, .after::after {
+.item:hover .text::after, .active .text::after {
     width: 100%;
 }
 
-.text, .after {
+.text, .active .text {
     position: relative;
     display: inline-block;
     font-weight:500;
 }
 
-.text::after, .after::after {
+.text::after{
     content: "";
     position: absolute;
     bottom: -10px;

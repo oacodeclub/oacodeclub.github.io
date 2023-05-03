@@ -1,11 +1,18 @@
 #ContactLabel {
-    font-weight: 500;
-    margin-bottom: 1rem;
+    color: black;
+    font-size:80px;
+    font-weight: 100;
 }
 
 #ContactUsSublabel {
     font-weight: 100;
     margin-bottom: 1rem;
+}
+
+#SignUpLabel {
+    color: black;
+    font-size:80px;
+    font-weight: 100;
 }
 
 #Contact input, #Signup input {
