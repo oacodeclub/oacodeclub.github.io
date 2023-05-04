@@ -31,7 +31,9 @@
     <link rel="stylesheet" href="/Assets/css/board.css">
     <link rel="stylesheet" href="/Assets/css/about.css">
     <link rel="stylesheet" href="/Assets/css/contact.css">
-    <link rel="stylesheet" href="/Assets/css/calendar.css" <!-- JS Files -->
+    <link rel="stylesheet" href="/Assets/css/calendar.css">
+
+    <!-- JS Files -->
     <script src="/Assets/js/about.js"></script>
 </head>
 
@@ -97,31 +99,41 @@
 
     <div id="About">
         <p id="AboutLabel">About</p>
-
-        <div id="Text1">
-            <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example1</h1>
+        <div class="ContentFiller">
+            <div id="Text1">
+                <h1 class="revealfor" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example1</h1>
+            </div>
         </div>
-        <br>
-        <div id="Text2">
-            <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2 Example 2 Example 2 Example 2
-                Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-                Example
-                2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-                Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-                Example
-                2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-            </h1>
+        <div class="ContentFiller">
+            <img src="/Assets/images/background-temp.gif">
+            <div id="Text2">
+                <h1 class="revealrev" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2 Example 2
+                    Example 2 Example 2
+                    Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
+                    Example
+                    2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example
+                    2
+                    Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
+                    Example
+                    2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example
+                    2
+                </h1>
+            </div>
         </div>
-        <br>
-        <div id="Text3">
-            <h1 data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3 Example 3 Example 3 Example 3
-                Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-                Example
-                3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-                Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-                Example
-                3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-            </h1>
+        <div class="ContentFiller">
+            <div id="Text3">
+                <h1 class="revealfor" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3 Example 3
+                    Example 3 Example 3
+                    Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
+                    Example
+                    3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example
+                    3
+                    Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
+                    Example
+                    3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example
+                    3
+                </h1>
+            </div>
         </div>
     </div>
 
@@ -241,7 +253,8 @@
     <div id="Calendar">
         <h1 id="CalendarLabel">Calendar</h1>
         <div id="CalendarContainer">
-            <iframe id="CalendarListing" src="https://calendar.google.com/calendar/embed?src=csclub%40stevens.edu&ctz=America%2FNew_York"
+            <iframe id="CalendarListing"
+                src="https://calendar.google.com/calendar/embed?src=csclub%40stevens.edu&ctz=America%2FNew_York"
                 style="border: 0" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
@@ -249,13 +262,11 @@
     <div id="Signup">
         <h1 id="SignUpLabel">Sign Up</h1>
         <div>
-            <form>
-                <input type="text" id="fname" name="fname" placeholder="First Name">
-                <input type="text" id="lname" name="lname" placeholder="Last Name">
-                <input type="text" id="email" name="email" placeholder="Email">
-                <input type="number" id="studentid" name="studentid" placeholder="Student ID">
-                <input type="submit" value="Submit">
-            </form>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="number" id="studentid" name="studentid" placeholder="Student ID">
+            <input type="submit" value="Submit">
         </div>
     </div>
     <br><br>
@@ -275,7 +286,8 @@
         <br>
         <input type="submit" value="Submit">
     </div>
-    <footer>
+    <footer id="Footer"
+        style="background-image: url(/Assets/images/background-temp.gif); background-size: cover; color:white;">
         <h4>
             Developed by Erick Tran for OA Code
         </h4>

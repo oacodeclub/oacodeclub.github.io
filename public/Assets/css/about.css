@@ -3,7 +3,6 @@ body {
 
 }
 
-
 #About {
     height: fit-content;
 }
@@ -28,24 +27,42 @@ body {
     font-size: 150px;
 }
 
-#Text1,#Text3 {
+#Text1,
+#Text3 {
     width: 70%;
     height: 50vh;
-    background-color: gray;
+    background-color: rgb(13, 65, 2);
     z-index: 1000;
     margin-left: 0px;
     margin-right: auto;
+    color: white;
 }
 
 #Text2 {
     width: 70%;
     height: 50vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 51);
     z-index: 1000;
     margin-right: 0px;
     margin-left: auto;
+    color: white;
 }
 
 #About {
     height: fit-content;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ContentFiller {
+    display: flex;
 }
