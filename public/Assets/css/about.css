@@ -3,6 +3,11 @@ body {
 
 }
 
+
+#About {
+    height: fit-content;
+}
+
 #TitleDiv {
     font-weight: 300;
     background-image: url(/Assets/images/background-temp.gif);
