@@ -12,18 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-rXcOcZAkyDvJXVoiHJMF+LWmO7/b00TLzcK2F5C0sw4p0urHJkMjLl/ky1c1Y+MQ" crossorigin="anonymous">
-
-    <!-- MDB -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.css"
-        integrity="sha512-0fFyNtL8Qg6phTjySvI3Mc9uW+R7M6F1nuZrldX+hnzZl1r5rymGP7brXqC3/yyKsIIMXM+2fOgQGXOZgPzKjg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.js"
-        integrity="sha512-KhmrxUwmlrouP4BS1LCGhWh3yUOGJiJd2A2kq0HNZilM9n+l9VRbsGGLHVz0g6pPQ6z7rPJgzYpLVzYIKTtEoA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- CSS Files -->
     <link rel="stylesheet" href="/Assets/css/navbar.css">
     <link rel="stylesheet" href="/Assets/css/animations.css">
@@ -58,32 +46,36 @@
             <button class="item right active" onclick="document.getElementById('Home').scrollIntoView();">
                 <h3 class="text">Home</h3>
             </button>
-            <button class="img" onclick="document.getElementById('Home').scrollIntoView();">
+            <button class="img" onmousedown="document.getElementById('Home').scrollIntoView();">
                 <img src="/Assets/images/Example.jpeg" class="image">
             </button>
         </nav>
+
         <nav class="mobiletopnav" id="MobileVisible">
-            <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger" onclick="openNav()">
-            <ul>
-                <button onclick="document.getElementById('Contact').scrollIntoView();">
+            <button id="HamburgerSelectionButton">
+                <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger dropbtn">
+            </button>
+            
+            <div id="MobileVisibleUl" class="dropdown-content">
+                <button class="item" style="animation: growDown 1300ms ease-in-out forwards" onclick="document.getElementById('Contact').scrollIntoView();">
                     <h3 class="text">Contact</h3>
                 </button>
-                <button onclick="document.getElementById('Signup').scrollIntoView();">
+                <button class="item" style="animation: growDown 1100ms ease-in-out forwards" onclick="document.getElementById('Signup').scrollIntoView();">
                     <h3 class="text">Sign Up</h3>
                 </button>
-                <button onclick="document.getElementById('Calendar').scrollIntoView();">
+                <button class="item" style="animation: growDown 900ms ease-in-out forwards" onclick="document.getElementById('Calendar').scrollIntoView();">
                     <h3 class="text">Calendar</h3>
                 </button>
-                <button onclick="document.getElementById('Board').scrollIntoView();">
+                <button class="item" style="animation: growDown 700ms ease-in-out forwards" onclick="document.getElementById('Board').scrollIntoView();">
                     <h3 class="text">Our Board</h3>
                 </button>
-                <button onclick="document.getElementById('About').scrollIntoView();">
+                <button class="item" style="animation: growDown 500ms ease-in-out forwards" onclick="document.getElementById('About').scrollIntoView();">
                     <h3 class="text">About Us</h3>
                 </button>
-                <button onclick="document.getElementById('Home').scrollIntoView();">
+                <button class="item" style="animation: growDown 300ms ease-in-out forwards" onclick="document.getElementById('Home').scrollIntoView();">
                     <h3 class="text">Home</h3>
                 </button>
-            </ul>
+            </div>
         </nav>
     </div>
 
@@ -292,7 +284,7 @@
             Developed by Erick Tran for OA Code
         </h4>
         <h4>
-            Beta Version 0.1.0
+            Beta Version 0.5.0
         </h4>
     </footer>
 </body>

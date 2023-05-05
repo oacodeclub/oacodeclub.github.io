@@ -89,6 +89,10 @@ body {
     height: 0;
 }
 
+#MobileVisibleUl {
+    display: none;
+}
+
 @media (max-width: 719px) {
     .image {
         width: 10%;
@@ -98,6 +102,10 @@ body {
     #MobileVisible {
         opacity: 1;
         width: 100%;
+        height: fit-content;
+        background-color: white;
+        position: fixed;
+        z-index: 15000;
     }
 
     #ComputerVisible {
@@ -108,10 +116,13 @@ body {
     }
 
     .hamburger {
-        margin: 4%;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
         width: 7.5%;
-        height: 7.5%;
+        height: auto;
         z-index: 8;
+        padding-right: 10px;
+        float: right;
     }
 
     /* Style the links inside the navigation bar */
