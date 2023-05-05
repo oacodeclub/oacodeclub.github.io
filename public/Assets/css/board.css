@@ -37,3 +37,29 @@
     font-size: 100px;
     font-weight:normal;
 }
+
+@media (max-width: 719px) {
+    .item p {
+        color: white;
+        font-size: 17.5px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        line-height: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main p {
+        padding: unset;
+    }
+
+    .Socials {
+        font-size: 10px;
+    }
+}

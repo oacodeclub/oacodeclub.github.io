@@ -57,4 +57,38 @@
             font-size: 20px;
         }
     }
+
+    @keyframes move-and-expand-About {
+        from {
+            transform: translateY(80%);
+            font-size: 0px;
+        }
+    
+        to {
+            transform: translateY(0%);
+            font-size: 20px;
+        }
+    }
+    @keyframes slide-left {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+    
+        to {
+            transform: translateX(25px);
+            opacity: 1;
+        }
+    }
+    @keyframes slide-right {
+        from {
+            transform: translatex(-50px);
+            opacity: 0;
+        }
+    
+        to {
+            transform: translatex(25px);
+            opacity: 1;
+        }
+    }
 }

@@ -27,22 +27,4 @@ window.addEventListener('scroll', function () {
   } else {
     //console.log("Unknown device");
   }
-
 });
-
-function reveal() {
-  var reveals = document.querySelectorAll(".revealfor");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var revealTop = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 50;
-
-    if (revealTop < windowHeight - revealPoint) {
-      reveals[i].classList.add("is-visible");
-    } else {
-      reveals[i].classList.remove("is-visible");
-    }
-  }
-}
-
-window.addEventListener("scroll", reveal);
