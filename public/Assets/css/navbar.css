@@ -159,12 +159,19 @@ body {
     #MobileVisibleUl {
         width: 100%;
         height: fit-content;
+        opacity: 0;
+        animation: growDown 300ms ease-in-out forwards;
+        animation-delay:0.1s;
     }
 
     #MobileVisibleUl button {
         float: none;
         display: block;
         text-align: center;
+        background-color: transparent;
+        border-width: 0;
         width: 100%;
+        opacity: 0;
+        animation: growDown 300ms ease-in-out forwards;
     }
 }

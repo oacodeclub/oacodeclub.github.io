@@ -38,6 +38,10 @@
     #SignUpLabel, #ContactLabel {
         font-size: 50px;
     }
+
+    #Signup input, #Contact input {
+        width: 80%;
+    }
 }
 
 @keyframes animateOrangeOnHover {
