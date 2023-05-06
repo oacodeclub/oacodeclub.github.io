@@ -34,6 +34,12 @@
     animation-direction: reverse;
 }
 
+@media (max-width: 719px) {
+    #SignUpLabel, #ContactLabel {
+        font-size: 50px;
+    }
+}
+
 @keyframes animateOrangeOnHover {
     0% {
         border-color: #ccc;

@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 719px) {
+    #BoardTitle {
+        font-size: 50px;
+    }
+
     .item p {
         color: white;
         font-size: 25px;
