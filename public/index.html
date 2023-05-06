@@ -52,28 +52,38 @@
         </nav>
 
         <nav class="mobiletopnav" id="MobileVisible">
-            <button id="HamburgerSelectionButton">
-                <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger dropbtn">
-            </button>
-            
+            <img src="/Assets/images/Example.jpeg" class="image" id="ImageMobile" onclick="window.location='/'">
+
+            <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger dropbtn" id="BtnDropdown1"
+                onclick="dropDown()">
+
+            <br><br>
+
             <div id="MobileVisibleUl" class="dropdown-content">
-                <button class="item" style="animation: growDown 1300ms ease-in-out forwards" onclick="document.getElementById('Contact').scrollIntoView();">
-                    <h3 class="text">Contact</h3>
+                <br>
+                <button class="item" style="animation: growDown 300ms ease-in-out forwards"
+                    onclick="document.getElementById('Home').scrollIntoView();">
+                    <h3 class="text">Home</h3>
                 </button>
-                <button class="item" style="animation: growDown 1100ms ease-in-out forwards" onclick="document.getElementById('Signup').scrollIntoView();">
-                    <h3 class="text">Sign Up</h3>
-                </button>
-                <button class="item" style="animation: growDown 900ms ease-in-out forwards" onclick="document.getElementById('Calendar').scrollIntoView();">
-                    <h3 class="text">Calendar</h3>
-                </button>
-                <button class="item" style="animation: growDown 700ms ease-in-out forwards" onclick="document.getElementById('Board').scrollIntoView();">
-                    <h3 class="text">Our Board</h3>
-                </button>
-                <button class="item" style="animation: growDown 500ms ease-in-out forwards" onclick="document.getElementById('About').scrollIntoView();">
+                <button class="item" style="animation: growDown 500ms ease-in-out forwards"
+                    onclick="document.getElementById('About').scrollIntoView();">
                     <h3 class="text">About Us</h3>
                 </button>
-                <button class="item" style="animation: growDown 300ms ease-in-out forwards" onclick="document.getElementById('Home').scrollIntoView();">
-                    <h3 class="text">Home</h3>
+                <button class="item" style="animation: growDown 700ms ease-in-out forwards"
+                    onclick="document.getElementById('Board').scrollIntoView();">
+                    <h3 class="text">Our Board</h3>
+                </button>
+                <button class="item" style="animation: growDown 900ms ease-in-out forwards"
+                    onclick="document.getElementById('Calendar').scrollIntoView();">
+                    <h3 class="text">Calendar</h3>
+                </button>
+                <button class="item" style="animation: growDown 1100ms ease-in-out forwards"
+                    onclick="document.getElementById('Signup').scrollIntoView();">
+                    <h3 class="text">Sign Up</h3>
+                </button>
+                <button class="item" style="animation: growDown 1300ms ease-in-out forwards"
+                    onclick="document.getElementById('Contact').scrollIntoView();">
+                    <h3 class="text">Contact</h3>
                 </button>
             </div>
         </nav>
