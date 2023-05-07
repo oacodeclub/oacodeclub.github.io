@@ -38,6 +38,10 @@ body {
     color: white;
 }
 
+.ContentFiller img {
+    width: 25%;
+}
+
 #Text2 {
     width: 70%;
     height: 50vh;
