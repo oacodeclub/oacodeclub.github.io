@@ -15,7 +15,7 @@
 
 ## Documentation/Intro to Website building/development
 1. Everything you do to be shown to the user should be in public
-    - `/public/index.html` is the main page
+    - `/public/index.html` is the main page, you can access it by going to `localhost:3000` OR `localhost:3000/index.html`.
     - `/public/Assets` is where you put css, js, images and assets, etc.
     - `/public/index.html` is the homepage that is shown to the user
     - How to do a basic website: Files available in `/public/Assets/example` as an example for how to do a basic website, if running in local environment, go to `localhost:3000/Assets/example/eXample.html` to see the example.
@@ -35,3 +35,5 @@
 ## Additional Resources
 - [Git/Github Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 - [Quick Start – React](https://react.dev/learn)
+
+## Last Updated on 05-07-2023 at 6:22 PM PT
