@@ -1,0 +1,375 @@
+/* Desktop Support CSS */
+
+/* DESKTOP Navigation bar (Navbar) CSS Settings */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: white;
+    overflow: auto;
+    font-weight: 25;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.desktoptopnav {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    color: black;
+    width: 100%;
+    z-index: 10000;
+}
+
+.desktoptopnav button.left {
+    padding-right: 50px;
+}
+
+.desktoptopnav button:not(.img) {
+    float: right;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.img {
+    float: left;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.image {
+    width: 75px;
+    height: 75px;
+}
+
+.item:hover .text::after,
+.active .text::after {
+    width: 100%;
+}
+
+.text,
+.active .text {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2.5px;
+    background-color: #6dd3ff;
+    transition: width 0.5s ease-in-out;
+}
+
+#MobileVisible {
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
+#LeftImg {
+    display: flex;
+}
+
+#ImgTitle {
+    padding-left: 1vh;
+    font-size: 3rem;
+}
+
+#ComputerVisible {
+    opacity: 1;
+    width: 100%;
+}
+
+.hamburger {
+    width: 0;
+    height: 0;
+}
+
+#MobileVisibleUl {
+    position: absolute;
+}
+
+/* DESKTOP Home Navigator Settings */
+
+#Title {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 4vh;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 140px;
+    margin: 0 auto;
+    animation: slide-up 2s, move-and-expand 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+#Sub-Title {
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    bottom: 0;
+    animation: slide-up 2s, move-and-expand-SubTitle 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+#Home {
+    background-image: url(/Assets/images/background-temp.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    color: white;
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 1);
+}
+
+/* DESKTOP About Navigator Settings */
+
+#About {
+    height: fit-content;
+}
+
+#TitleDiv {
+    font-weight: 300;
+    background-image: url(/Assets/images/background-temp.gif);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 30vh;
+    font-size: 15vh;
+    background-color: gray;
+}
+
+#AboutLabel {
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    top: 5%;
+    border-radius: 50px;
+    font-size: 150px;
+}
+
+#Text1,
+#Text3 {
+    width: 70%;
+    height: 50vh;
+    background-color: rgb(113, 113, 113);
+    z-index: 1000;
+    margin-left: 0px;
+    margin-right: auto;
+    color: white;
+}
+
+.ContentFiller img {
+    width: 25%;
+}
+
+#Text2 {
+    width: 70%;
+    height: 50vh;
+    background-color: rgb(97, 97, 97);
+    z-index: 1000;
+    margin-right: 0px;
+    margin-left: auto;
+    color: white;
+}
+
+#About {
+    height: fit-content;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ContentFiller {
+    display: flex;
+}
+
+/* DESKTOP Board Navigator Settings */
+
+#BoardTitle {
+    color: black;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.main {
+    background-color: black;
+    ;
+    color: white;
+    padding: 30px;
+    width: auto;
+    line-height: 6em;
+}
+
+.main p {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 10em;
+}
+
+.profilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto;
+    display: block;
+}
+
+.Socials a {
+    color: lightblue;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 0 10px;
+    font-size: 100px;
+    font-weight: normal;
+}
+
+/* DESKTOP Calendar Navigator Settings */
+
+#CalendarLabel {
+    color: black;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+/* DESKTOP Sign Up and Contact Navigator Settings */
+
+#ContactLabel {
+    color: black;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#ContactUsSublabel {
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+#SignUpLabel {
+    color: black;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#Contact input,
+#Signup input {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+#Contact input:hover,
+#Signup input:hover {
+    animation: animateOrangeOnHover 0.5s;
+    animation-fill-mode: both;
+}
+
+#Contact input:not(:hover),
+#Signup input:not(:hover) {
+    animation-direction: reverse;
+}
+
+/* DESKTOP Animations */
+
+@keyframes animateOrangeOnHover {
+    0% {
+        border-color: #ccc;
+    }
+
+    100% {
+        border-color: #00ffd0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes move-and-expand {
+    from {
+        transform: translateY(80%);
+        font-size: 100px;
+    }
+
+    to {
+        transform: translateY(0%);
+        font-size: 140px;
+    }
+}
+
+@keyframes move-and-expand-SubTitle {
+    from {
+        transform: translateY(80%);
+        font-size: 20px;
+    }
+
+    to {
+        transform: translateY(0%);
+        font-size: 40px;
+    }
+}

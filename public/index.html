@@ -13,16 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="/Assets/css/navbar.css">
-    <link rel="stylesheet" href="/Assets/css/animations.css">
-    <link rel="stylesheet" href="/Assets/css/home.css">
-    <link rel="stylesheet" href="/Assets/css/board.css">
-    <link rel="stylesheet" href="/Assets/css/about.css">
-    <link rel="stylesheet" href="/Assets/css/contact.css">
-    <link rel="stylesheet" href="/Assets/css/calendar.css">
-
+    <link rel="stylesheet" href="/Assets/css/desktop-homepage.css">
+    <link rel="stylesheet" href="/Assets/css/mobile-homepage.css">
+    
     <!-- JS Files -->
-    <script src="/Assets/js/about.js"></script>
+    <script src="/Assets/js/homepage.js"></script>
 </head>
 
 <body>
@@ -52,12 +47,15 @@
             </button>
         </nav>
 
+
         <nav class="mobiletopnav" id="MobileVisible">
             <img src="/Assets/images/Example.jpeg" class="image" id="ImageMobile" onclick="window.location='/'">
 
-            <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger dropbtn" id="BtnDropdown1" onclick="dropDown()">
-            <h5 id="TopNavTitle">OA Code Club</h5>
-        
+            <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger dropbtn" id="BtnDropdown1"
+                onclick="dropDown()">
+
+            <h5 id="TopNavTitle" onclick="document.getElementById('Home').scrollIntoView();">OA Code Club</h5>
+
             <div id="MobileVisibleUl" class="dropdown-content">
                 <br>
                 <button class="item" style="animation-delay:0.3s"
@@ -109,32 +107,12 @@
         <div class="ContentFiller">
             <img src="/Assets/images/background-temp.gif">
             <div id="Text2">
-                <h1 class="revealrev" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2 Example 2
-                    Example 2 Example 2
-                    Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-                    Example
-                    2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example
-                    2
-                    Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2
-                    Example
-                    2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example 2 Example
-                    2
-                </h1>
+                <h1 class="revealrev" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2</h1>
             </div>
         </div>
         <div class="ContentFiller">
             <div id="Text3">
-                <h1 class="revealfor" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3 Example 3
-                    Example 3 Example 3
-                    Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-                    Example
-                    3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example
-                    3
-                    Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3
-                    Example
-                    3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example 3 Example
-                    3
-                </h1>
+                <h1 class="revealfor" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3</h1>
             </div>
             <img src="/Assets/images/background-temp.jpg">
         </div>

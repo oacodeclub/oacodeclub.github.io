@@ -5,12 +5,12 @@ window.addEventListener("load", async function () {
 window.addEventListener('scroll', function () {
   if (this.screen.width <= 719) {
     let divElements = [
-      { id: 'Home', navbarSelector: '.dropdown-content .item.left', Title: 'Contact' },
-      { id: 'About', navbarSelector: '.dropdown-content .item:nth-child(2)', Title: 'Sign Up' },
-      { id: 'Board', navbarSelector: '.dropdown-content .item:nth-child(3)', Title: 'Calendar' },
-      { id: 'Calendar', navbarSelector: '.dropdown-content .item:nth-child(4)', Title: 'The Board' },
-      { id: 'Signup', navbarSelector: '.dropdown-content .item:nth-child(5)', Title: 'About' },
-      { id: 'Contact', navbarSelector: '.dropdown-content .item.right', Title: 'Home' }
+      { id: 'Home', navbarSelector: '.dropdown-content .item.left', Title: 'Home' },
+      { id: 'About', navbarSelector: '.dropdown-content .item:nth-child(2)', Title: 'About' },
+      { id: 'Board', navbarSelector: '.dropdown-content .item:nth-child(3)', Title: 'The Board' },
+      { id: 'Calendar', navbarSelector: '.dropdown-content .item:nth-child(4)', Title: 'Calendar' },
+      { id: 'Signup', navbarSelector: '.dropdown-content .item:nth-child(5)', Title: 'Sign Up' },
+      { id: 'Contact', navbarSelector: '.dropdown-content .item.right', Title: 'Contact' }
     ];
     divElements.forEach(function (divElement) {
       const element = document.getElementById(divElement.id);
