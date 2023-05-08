@@ -115,6 +115,10 @@
         opacity: 0;
     }
 
+    #Home {
+        top: 0;
+    }
+
     /* MOBILE About Navigator Settings */
 
     #AboutLabel {

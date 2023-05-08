@@ -1,6 +1,7 @@
 window.addEventListener("load", async function () {
-  window.scrollBy(0, -window.pageYOffset);
-})
+  window.scrollTo(0, 0);
+  document.documentElement.style.scrollBehavior = 'smooth';
+});
 
 window.addEventListener('scroll', function () {
   if (this.screen.width <= 719) {
@@ -36,7 +37,7 @@ window.addEventListener('scroll', function () {
       const element = document.getElementById(divElement.id);
       let navbarElement = document.querySelector(divElement.navbarSelector);
       let rect = element.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
+      if (rect.top <= window.innerHeight && rect.bottom > 0) {
         navbarElement.classList.add('active');
       } else {
         navbarElement.classList.remove('active');

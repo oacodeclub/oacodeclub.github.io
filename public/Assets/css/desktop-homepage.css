@@ -2,10 +2,6 @@
 
 /* DESKTOP Navigation bar (Navbar) CSS Settings */
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: white;
