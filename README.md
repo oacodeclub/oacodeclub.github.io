@@ -30,10 +30,6 @@
 1. Open the Source Control tab (Ctrl + Shift + G)
 1. Stage the changes you want to include in this commit (press the + button)
 1. Write a commit message describing what you’ve changed
-1. Do a commit and pull request
-
-## Additional Resources
-- [Git/Github Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
-- [Quick Start – React](https://react.dev/learn)
+1. Do a commit and pull request to the dev branch
 
 ## Last Updated on 05-07-2023 at 6:22 PM PT
