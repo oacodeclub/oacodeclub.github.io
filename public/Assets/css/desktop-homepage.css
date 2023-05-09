@@ -321,6 +321,26 @@ body {
     animation-direction: reverse;
 }
 
+/* DESKTOP Footer Animations*/
+#Footer {
+    background-image: url(/Assets/images/background-temp.gif);
+    background-size: cover;
+    color: white;
+}
+
+#FooterText {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border-width: 0;
+}
+
+#Footer::before {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
 /* DESKTOP Animations */
 
 @keyframes animateOrangeOnHover {
