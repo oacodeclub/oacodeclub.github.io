@@ -53,3 +53,70 @@ toggle between hiding and showing the dropdown content */
 function dropDown() {
   document.getElementById("MobileVisibleUl").classList.toggle("show");
 }
+
+async function submitSignUp() {
+  let firstName = document.getElementById("FirstNameSign").value;
+  let lastName = document.getElementById("LastNameSign").value;
+  let email = document.getElementById("EmailSign").value;
+  let studentID = document.getElementById("studentIDSign").value;
+
+  let data = {
+    "firstName": firstName,
+    "lastName": lastName,
+    "Email": email,
+    "studentID": studentID
+  };
+
+  let submit = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  };
+
+  await fetch("/signup", submit)
+    .then(response => response.text)
+    .then(data => {
+      if (data != null || data != "" || data != undefined) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+}
+
+function submitContact() {
+  let firstName = document.getElementById("FirstNameContact").value;
+  let lastName = document.getElementById("LastNameContact").value;
+  let email = document.getElementById("EmailContact").value;
+  let Subject = document.getElementById("SubjectContact").value;
+  let Message = document.getElementById("MessageContact").value;
+
+
+  let data = {
+    "firstName": firstName,
+    "lastName": lastName,
+    "Email": email,
+    "Subject": Subject,
+    "Message": Message
+  };
+
+  let submit = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  };
+
+  fetch("/contact", submit)
+    .then(response => response.text)
+    .then(data => {
+      if (data != null || data != "" || data != undefined) {
+        return 1;
+      } else {
+        return 0;
+      }
+    })
+}

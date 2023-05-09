@@ -243,11 +243,11 @@
     <div id="Signup">
         <h1 id="SignUpLabel">Sign Up</h1>
         <div>
-            <input type="text" id="fname" name="fname" placeholder="First Name">
-            <input type="text" id="lname" name="lname" placeholder="Last Name">
-            <input type="text" id="email" name="email" placeholder="Email">
-            <input type="number" id="studentid" name="studentid" placeholder="Student ID">
-            <input type="submit" value="Submit">
+            <input type="text" id="fname" name="fname" placeholder="First Name" id="FirstNameSign">
+            <input type="text" id="lname" name="lname" placeholder="Last Name" id="LastNameSign">
+            <input type="text" id="email" name="email" placeholder="Your Email" id="EmailSign">
+            <input type="number" id="studentid" name="studentid" placeholder="Student ID" id="studentIDSign">
+            <input type="submit" value="Submit" id="SignUpSubmit" onclick="submitSignUp()">
         </div>
     </div>
     <br><br>
@@ -258,14 +258,15 @@
         <h2 id="ContactUsSublabel">
             Send us a message or check out our socials!
         </h2>
-        <input type="text" id="fname" name="fname" placeholder="Your Name">
-        <input type="text" id="email" name="email" placeholder="Your Email">
+        <input type="text" id="fname" name="fname" placeholder="Your Name" id="FirstNameContact">
+        <input type="text" id="lname" name="lname" placeholder="Last Name" id="LastNameContact">
+        <input type="text" id="email" name="email" placeholder="Your Email" id="EmailContact">
         <br>
-        <input type="text" id="subject" name="subject" placeholder="Your Subject">
+        <input type="text" id="subject" name="subject" placeholder="Your Subject" id="SubjectContact">
         <br>
-        <input type="text" id="message" name="message" placeholder="Your Message">
+        <input type="text" id="message" name="message" placeholder="Your Message" id="MessageContact">
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="ContactSubmit" onclick="submitContact()">
     </div>
     <footer id="Footer"
         style="background-image: url(/Assets/images/background-temp.gif); background-size: cover; color:white;">
