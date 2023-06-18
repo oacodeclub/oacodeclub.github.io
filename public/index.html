@@ -1,43 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/Assets/images/Example.jpeg">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - OA Code Club</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Bootstrap CSS Elements -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="/Assets/css/desktop-homepage.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/css/mobile-homepage.css">
+    
+    <!-- JS Files -->
+    <script src="/Assets/js/homepage.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav class="desktoptopnav" id="ComputerVisible">
+            <button class="item left" onclick="document.getElementById('Contact').scrollIntoView();">
+                <h3 class="text">Contact</h3>
+            </button>
+            <button class="item" onclick="document.getElementById('Signup').scrollIntoView();">
+                <h3 class="text">Sign Up</h3>
+            </button>
+            <button class="item" onclick="document.getElementById('Calendar').scrollIntoView();">
+                <h3 class="text">Calendar</h3>
+            </button>
+            <button class="item" onclick="document.getElementById('Board').scrollIntoView();">
+                <h3 class="text">Our Board</h3>
+            </button>
+            <button class="item" onclick="document.getElementById('About').scrollIntoView();">
+                <h3 class="text">About Us</h3>
+            </button>
+            <button class="item right active" onclick="document.getElementById('Home').scrollIntoView();">
+                <h3 class="text">Home</h3>
+            </button>
+            <button class="img" onmousedown="document.getElementById('Home').scrollIntoView();" id="LeftImg">
+                <img src="/Assets/images/Example.jpeg" class="image">
+                <h1 id="ImgTitle">OA Code Club</h1>
+            </button>
+        </nav>
+
+
+        <nav class="mobiletopnav" id="MobileVisible">
+            <img src="/Assets/images/Example.jpeg" class="image" id="ImageMobile" onclick="window.location='/'">
+
+            <img src="/Assets/images/HamburgerSelectionIcon.png" class="hamburger dropbtn" id="BtnDropdown1"
+                onclick="dropDown()">
+
+            <h5 id="TopNavTitle" onclick="document.getElementById('Home').scrollIntoView();">OA Code Club</h5>
+
+            <div id="MobileVisibleUl" class="dropdown-content">
+                <br>
+                <button class="item left" style="animation-delay:0.3s"
+                    onclick="document.getElementById('Home').scrollIntoView();">
+                    <h3 class="text">Home</h3>
+                </button>
+                <button class="item" style="animation-delay:0.4s"
+                    onclick="document.getElementById('About').scrollIntoView();">
+                    <h3 class="text">About Us</h3>
+                </button>
+                <button class="item" style="animation-delay:0.5s"
+                    onclick="document.getElementById('Board').scrollIntoView();">
+                    <h3 class="text">Our Board</h3>
+                </button>
+                <button class="item" style="animation-delay:0.6s"
+                    onclick="document.getElementById('Calendar').scrollIntoView();">
+                    <h3 class="text">Calendar</h3>
+                </button>
+                <button class="item" style="animation-delay:0.7s"
+                    onclick="document.getElementById('Signup').scrollIntoView();">
+                    <h3 class="text">Sign Up</h3>
+                </button>
+                <button class="item right" style="animation-delay:0.8s"
+                    onclick="document.getElementById('Contact').scrollIntoView();">
+                    <h3 class="text">Contact</h3>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div id="Home">
+        <h1 id="Title" data-animate style="animation-delay:0.1s;">Welcome to OA Code</h1>
+        <br><br>
+        <h3 id="Sub-Title" data-animate style="animation-delay:0.1s;">We contribute to widespread coding
+            recognition.<br><br>Meetings every Friday!
+        </h3>
+    </div>
+
+    <br><br>
+
+    <div id="About">
+        <p id="AboutLabel">About</p>
+        <div class="ContentFiller">
+            <div id="Text1">
+                <h1 class="revealfor" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example1</h1>
+            </div>
+            <img src="/Assets/images/background-temp.jpg">
+        </div>
+        <div class="ContentFiller">
+            <img src="/Assets/images/background-temp.gif">
+            <div id="Text2">
+                <h1 class="revealrev" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 2</h1>
+            </div>
+        </div>
+        <div class="ContentFiller">
+            <div id="Text3">
+                <h1 class="revealfor" data-mdb-toggle="animation" data-mdb-animation="slide-in-left">Example 3</h1>
+            </div>
+            <img src="/Assets/images/background-temp.jpg">
+        </div>
+    </div>
+
+    <br><br>
+    <div id="Board">
+        <p id="BoardTitle">Our Board</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ul>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="main">
+                        <img class="profilePicture" src="/Assets/images/Placeholder.png">
+                        <div class="card-body">
+                            <h1>Placeholder A.</h1>
+                        </div>
+                        <p class="card-text" id="Position">President</p>
+                        <p class="card-text" id="Class">Oxford - Class of 2020</p>
+                        <div class="Socials">
+                            <a href="..">
+                                <h1>Email</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Discord</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Github</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="main">
+                        <img class="profilePicture" src="/Assets/images/Placeholder.png">
+                        <div class="card-body">
+                            <h1>Placeholder B.</h1>
+                        </div>
+                        <p class="card-text" id="Position">Vice President</p>
+                        <p class="card-text" id="Class">Oxford - Class of 2021</p>
+                        <div class="Socials">
+                            <a href="..">
+                                <h1>Email</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Discord</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Github</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="main">
+                        <img class="profilePicture" src="/Assets/images/Placeholder.png">
+                        <div class="card-body">
+                            <h1>Placeholder C.</h1>
+                        </div>
+                        <p class="card-text" id="Position">Event Coordinator</p>
+                        <p class="card-text" id="Class">Oxford - Class of 2025</p>
+                        <div class="Socials">
+                            <a href="..">
+                                <h1>Email</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Discord</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Github</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="main">
+                        <img class="profilePicture" src="/Assets/images/Placeholder.png">
+                        <div class="card-body">
+                            <h1>Placeholder D.</h1>
+                        </div>
+                        <p class="card-text" id="Position">Lead Programmer</p>
+                        <p class="card-text" id="Class">Oxford - Class of 2024</p>
+                        <div class="Socials">
+                            <a href="..">
+                                <h1>Email</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Discord</h1>
+                            </a>
+                            <a href="..">
+                                <h1>Github</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Calendar">
+        <p id="CalendarLabel">Calendar</p>
+        <div id="CalendarContainer">
+            <iframe id="CalendarListing"
+                src="https://calendar.google.com/calendar/embed?src=csclub%40stevens.edu&ctz=America%2FNew_York"
+                style="border: 0" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <br><br>
+    <div id="Signup">
+        <p id="SignUpLabel">Sign Up</p>
+        <div>
+            <input type="text" id="fname" name="fname" placeholder="First Name" id="FirstNameSign">
+            <input type="text" id="lname" name="lname" placeholder="Last Name" id="LastNameSign">
+            <br><br>
+            <input type="text" id="email" name="email" placeholder="Your Email" id="EmailSign">
+            <input type="number" id="studentid" name="studentid" placeholder="Student ID" id="studentIDSign">
+            <br>
+            <input type="submit" value="Submit" id="SignUpSubmit" onclick="submitSignUp()">
+        </div>
+    </div>
+    <br><br>
+    <div id="Contact">
+        <p id="ContactLabel">Message Us!</p>
+        <h2 id="ContactUsSublabel">
+            Send us a message or check out our socials!
+        </h2>
+        <input type="text" id="fname" name="fname" placeholder="Your Name" id="FirstNameContact">
+        <input type="text" id="lname" name="lname" placeholder="Last Name" id="LastNameContact">
+        <br>
+        <input type="text" id="email" name="email" placeholder="Your Email" id="EmailContact">
+        <br>
+        <input type="text" id="subject" name="subject" placeholder="Your Subject" id="SubjectContact">
+        <br>
+        <input type="text" id="message" name="message" placeholder="Your Message" id="MessageContact">
+        <br>
+        <input type="submit" value="Submit" class="ContactSubmit" onclick="submitContact()">
+    </div>
+    <br><br>
+    <footer id="Footer">
+        <h4 id="FooterText">
+            Developed by Erick Tran for OA Code<br>Last Updated on 6-18-2023 at 12:46 AM<br>Beta Version 0.81
+        </h4>
+    </footer>
+</body>
+
 </html>
