@@ -64,7 +64,7 @@ body {
   transition: width 0.5s ease-in-out;
 }
 
-.item:hover .text::after::after,
+.item:hover .text::after,
 .active .text::after {
   width: 100%;
 }
