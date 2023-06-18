@@ -1,293 +1,238 @@
 /* Mobile Support CSS */
-
 @media (max-width: 719px) {
-    /* MOBILE Navigation bar (Navbar) CSS Settings */
-
-    .image {
-        width: 10%;
-        height: 10%;
+  /* MOBILE Navigation bar (Navbar) CSS Settings */
+  .image {
+    width: 10%;
+    height: 10%;
+  }
+  #MobileVisible {
+    opacity: 1;
+    width: 100%;
+    height: fit-content;
+    pointer-events: unset;
+    background-color: white;
+    position: fixed;
+    z-index: 15000;
+  }
+  #TopNavTitle {
+    height: fit-content;
+    font-size: clamp(1rem, 4.5vw, 3.5rem);
+  }
+  #ComputerVisible {
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+  }
+  #HamburgerSelectionButton {
+    height: fit-content;
+    background-color: transparent;
+  }
+  #ImageMobile {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10px;
+    width: 10%;
+    height: auto;
+    display: flex;
+    z-index: 8;
+    float: left;
+  }
+  .dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .show {
+    display: block;
+  }
+  .hamburger {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 10px;
+    width: 8%;
+    height: auto;
+    display: flex;
+    z-index: 8;
+    float: right;
+  }
+  #MobileVisibleUl {
+    width: 100%;
+    height: fit-content;
+    opacity: 0;
+    animation: growDown 300ms ease-in-out forwards;
+    animation-delay: 0.1s;
+  }
+  #MobileVisibleUl button {
+    float: none;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border-width: 0;
+    width: 100%;
+    opacity: 0;
+    animation: growDown 300ms ease-in-out forwards;
+  }
+  /* MOBILE Home Navigator Settings */
+  #Title {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-top: 20vh;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 40px;
+    margin: 0 auto;
+    animation: slide-up 2s, move-and-expand 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
+  #Sub-Title {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    bottom: 0;
+    animation: slide-up 2s, move-and-expand-SubTitle 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
+  #Home {
+    top: 0;
+  }
+  /* MOBILE About Navigator Settings */
+  #AboutLabel {
+    font-size: 75px;
+  }
+  .ContentFiller {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #Text1, #Text2, #Text3 {
+    width: 100%;
+    background-image: url(/Assets/images/background-temp.jpg);
+  }
+  .ContentFiller h1 {
+    width: 100%;
+    font-size: 20px;
+    padding: 7.5px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0 auto;
+    animation: slide-right 2s, move-and-expand-About 1s;
+    animation-fill-mode: both;
+    opacity: 1;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ContentFiller img {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  /* MOBILE Board Navigator Settings */
+  #BoardTitle {
+    font-size: 50px;
+  }
+  .item p {
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    line-height: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main p {
+    padding: unset;
+  }
+  .Socials {
+    font-size: 15px;
+  }
+  /* MOBILE Calendar Navigator Settings */
+  #CalendarLabel, #SignUpLabel, #ContactLabel {
+    font-size: 50px;
+  }
+  /* MOBILE Sign Up and Contact Navigator Settings */
+  #Signup input, #Contact input {
+    width: 80%;
+  }
+  /* MOBILE Animations */
+  @keyframes move-and-expand {
+    from {
+      transform: translateY(80%);
+      font-size: 10px;
     }
-
-    #MobileVisible {
-        opacity: 1;
-        width: 100%;
-        height: fit-content;
-        pointer-events: unset;
-        background-color: white;
-        position: fixed;
-        z-index: 15000;
+    to {
+      transform: translateY(0%);
+      font-size: 60px;
     }
-
-    #TopNavTitle {
-        height: fit-content;
-        font-size: clamp(1rem, 4.5vw, 3.5rem);
+  }
+  @keyframes move-and-expand-SubTitle {
+    from {
+      transform: translateY(80%);
+      font-size: 10px;
     }
-
-    #ComputerVisible {
-        opacity: 0;
-        pointer-events: none;
-        width: 0;
-        height: 0;
+    to {
+      transform: translateY(0%);
+      font-size: 20px;
     }
-
-    #HamburgerSelectionButton {
-        height: fit-content;
-        background-color: transparent;
+  }
+  @keyframes move-and-expand-About {
+    from {
+      transform: translateY(80%);
+      font-size: 0px;
     }
-
-    #ImageMobile {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        padding-left: 10px;
-        width: 10%;
-        height: auto;
-        display: flex;
-        z-index: 8;
-        float: left;
+    to {
+      transform: translateY(0%);
+      font-size: 20px;
     }
-
-    .dropdown-content {
-        display: none;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
+  }
+  @keyframes slide-left {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
     }
-
-    .show {
-        display: block;
+    to {
+      transform: translateX(25px);
+      opacity: 1;
     }
-
-    .hamburger {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        padding-right: 10px;
-        width: 8%;
-        height: auto;
-        display: flex;
-        z-index: 8;
-        float: right;
+  }
+  @keyframes slide-right {
+    from {
+      transform: translatex(-50px);
+      opacity: 0;
     }
-
-    #MobileVisibleUl {
-        width: 100%;
-        height: fit-content;
-        opacity: 0;
-        animation: growDown 300ms ease-in-out forwards;
-        animation-delay: 0.1s;
+    to {
+      transform: translatex(25px);
+      opacity: 1;
     }
-
-    #MobileVisibleUl button {
-        float: none;
-        display: block;
-        text-align: center;
-        background-color: transparent;
-        border-width: 0;
-        width: 100%;
-        opacity: 0;
-        animation: growDown 300ms ease-in-out forwards;
+  }
+  @keyframes growDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-25px);
     }
-
-    /* MOBILE Home Navigator Settings */
-
-    #Title {
-        font-weight: bolder;
-        color: white;
-        text-align: center;
-        padding-top: 20vh;
-        border-radius: 30px;
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 40px;
-        margin: 0 auto;
-        animation: slide-up 2s, move-and-expand 1s;
-        animation-fill-mode: both;
-        opacity: 0;
+    100% {
+      opacity: 1;
+      transform: translateY(-10px);
     }
-
-    #Sub-Title {
-        font-size: 20px;
-        font-weight: 300;
-        color: white;
-        text-align: center;
-        border-radius: 30px;
-        bottom: 0;
-        animation: slide-up 2s, move-and-expand-SubTitle 1s;
-        animation-fill-mode: both;
-        opacity: 0;
-    }
-
-    #Home {
-        top: 0;
-    }
-
-    /* MOBILE About Navigator Settings */
-
-    #AboutLabel {
-        font-size: 75px;
-    }
-
-    .ContentFiller {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #Text1,
-    #Text2,
-    #Text3 {
-        width: 100%;
-    }
-
-    #Text1,
-    #Text2,
-    #Text3 {
-        background-image: url(/Assets/images/background-temp.jpg);
-    }
-
-    .ContentFiller h1 {
-        width: 100%;
-        font-size: 20px;
-        padding: 7.5px;
-        font-weight: 100;
-        color: white;
-        text-align: center;
-        border-radius: 30px;
-        background-color: rgba(0, 0, 0, 0.9);
-        margin: 0 auto;
-        animation: slide-right 2s, move-and-expand-About 1s;
-        animation-fill-mode: both;
-        opacity: 1;
-        height: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ContentFiller img {
-        display: none;
-        visibility: hidden;
-        height: 0;
-        width: 0;
-    }
-
-    /* MOBILE Board Navigator Settings */
-
-    #BoardTitle {
-        font-size: 50px;
-    }
-
-    .item p {
-        color: white;
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .main {
-        line-height: 40px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .main p {
-        padding: unset;
-    }
-
-    .Socials {
-        font-size: 15px;
-    }
-
-    /* MOBILE Calendar Navigator Settings */
-
-    #CalendarLabel {
-        font-size: 50px;
-    }
-
-    /* MOBILE Sign Up and Contact Navigator Settings */
-
-    #SignUpLabel,
-    #ContactLabel {
-        font-size: 50px;
-    }
-
-    #Signup input,
-    #Contact input {
-        width: 80%;
-    }
-
-    /* MOBILE Animations */
-    @keyframes move-and-expand {
-        from {
-            transform: translateY(80%);
-            font-size: 10px;
-        }
-
-        to {
-            transform: translateY(0%);
-            font-size: 60px;
-        }
-    }
-
-    @keyframes move-and-expand-SubTitle {
-        from {
-            transform: translateY(80%);
-            font-size: 10px;
-        }
-
-        to {
-            transform: translateY(0%);
-            font-size: 20px;
-        }
-    }
-
-    @keyframes move-and-expand-About {
-        from {
-            transform: translateY(80%);
-            font-size: 0px;
-        }
-
-        to {
-            transform: translateY(0%);
-            font-size: 20px;
-        }
-    }
-
-    @keyframes slide-left {
-        from {
-            transform: translateX(50px);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(25px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slide-right {
-        from {
-            transform: translatex(-50px);
-            opacity: 0;
-        }
-
-        to {
-            transform: translatex(25px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes growDown {
-        0% {
-            opacity: 0;
-            transform: translateY(-25px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(-10px);
-        }
-    }
+  }
 }
+
+/*# sourceMappingURL=mobile-homepage.css.map */
